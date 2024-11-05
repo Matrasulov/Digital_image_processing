@@ -25,3 +25,13 @@ To use this custom cascade classifier in your project:
 2. Place the XML file in your project directory.
 3. Use the OpenCV `CascadeClassifier` in your code to load and apply the classifier.
 
+## Pre-installation
+* Python 3.7 +
+* OpenCV
+
+
+
+```
+pip install opencv-python
+```
+
