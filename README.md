@@ -14,7 +14,7 @@ This repository contains a custom-trained cascade classifier XML dataset created
 The dataset was created as an XML classifier file using the **Cascade GUI Trainer** tool, which allows for the generation of Haar or LBP cascades through an intuitive graphical user interface on Windows. The classifier was trained with [number] stages and optimized for high accuracy and low false-positive rates. 
 
 ### Key Features
-- **Custom Training**: Trained on specific images tailored for .
+- **Custom Training**: Trained on specific images tailored for detecting faces.
 - **High Detection Rate**: Optimized to maximize hit rate while minimizing false alarms.
 - **Easy Integration**: Compatible with OpenCV's `cv2.CascadeClassifier` for straightforward use.
 
@@ -35,3 +35,8 @@ To use this custom cascade classifier in your project:
 pip install opencv-python
 ```
 
+Once the  cascade data is trained, the location of that file needs to be given:
+
+```
+face_cascade = cv2.CascadeClassifier('haar_face.xml')
+```
